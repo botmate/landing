@@ -41,7 +41,7 @@ function Header({}: HeaderProps) {
 			m='auto'
 			textAlign='center'
 			gap={4}
-			py={2}
+			py={4}
 			px={{ base: 4, lg: 0 }}
 			color='white'
 		>
