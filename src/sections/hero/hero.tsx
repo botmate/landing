@@ -7,6 +7,7 @@ import {
 	Image,
 	Text,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import { HiArrowRight } from 'react-icons/hi';
 
 type HeroProps = {
@@ -79,15 +80,27 @@ function Hero({}: HeroProps) {
 					Get started
 				</Button>
 			</Box>
-			<Box maxW='7xl' m='auto'>
-				<Image
-					rounded='3xl'
-					border='1px solid transparent'
-					src='/demo-01.png'
-					alt='BotMate Demo'
-					mt={20}
-					className='shine'
-				/>
+			<Box maxW='7xl' m='auto' mt={20}>
+				<motion.div
+					initial={{
+						opacity: 0,
+						transform: 'perspective(75em) rotateX(15deg)',
+					}}
+					animate={{ opacity: 1, transform: 'perspective(75em) rotateX(0deg)' }}
+					transition={{
+						duration: 1,
+						delay: 0.5,
+						bounce: 0.5,
+					}}
+				>
+					<Image
+						rounded='3xl'
+						border='1px solid transparent'
+						src='/demo-01.png'
+						alt='BotMate Demo'
+						className='shine'
+					/>
+				</motion.div>
 			</Box>
 		</Flex>
 	);
