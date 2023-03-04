@@ -47,8 +47,8 @@ function Hero({}: HeroProps) {
 					Streamline Bot Development with BotMate
 				</Heading>
 				<Text maxW='3xl' m='auto' mt={4} fontSize={18}>
-					Build and deploy bots faster. Built-in moderation system, marketplace,
-					custom commands, and much more. Completely free and open-source.
+					Open-souce platform for build and deploying Telegram bots. Comes with
+					an in-built moderation system, analytics, marketplace and much more.
 				</Text>
 				<Button
 					mt={6}

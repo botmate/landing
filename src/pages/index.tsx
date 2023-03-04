@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import { Hero } from '@/sections';
+import { Features, Footer, Hero } from '@/sections';
 import { Header } from '@/components/header';
 import { Box } from '@chakra-ui/react';
 
+// todo: better SEO
 export default function Home() {
 	return (
 		<>
@@ -12,9 +13,20 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Box as='main' bgGradient='linear(to-t, primary.dark, #0f112c)'>
+			<Box position='relative'>
+				<Box
+					as='main'
+					top={0}
+					width='100%'
+					height='900px'
+					position='absolute'
+					zIndex={-1}
+					bgGradient='linear(to-t, primary.dark, #0f112c)'
+				/>
 				<Header />
 				<Hero />
+				<Features />
+				<Footer />
 			</Box>
 		</>
 	);
