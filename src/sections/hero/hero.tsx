@@ -1,7 +1,6 @@
 import {
 	Box,
 	Button,
-	ButtonGroup,
 	Center,
 	Flex,
 	Heading,
@@ -70,15 +69,14 @@ function Hero({}: HeroProps) {
 				</Button>
 			</Box>
 			<Box maxW='7xl' m='auto'>
-				<Box>
-					<Image
-						rounded='xl'
-						border='2px solid #e2e8f05d'
-						src='/demo-01.png'
-						alt='BotMate Demo'
-						mt={20}
-					/>
-				</Box>
+				<Image
+					rounded='3xl'
+					border='1px solid transparent'
+					src='/demo-01.png'
+					alt='BotMate Demo'
+					mt={20}
+					className='shine'
+				/>
 			</Box>
 		</Flex>
 	);

@@ -1,0 +1,21 @@
+.shine {
+	background: linear-gradient(
+		to right,
+		#ffffff00 20%,
+		#ffffff00 40%,
+		#61329f4d 50%,
+		#34399a 55%,
+		#ffffff00 70%,
+		#ffffff00 100%
+	);
+	background-size: 200% auto;
+	animation: shine 6s linear infinite;
+}
+
+/*Begin shimmer code*/
+
+@keyframes shine {
+	to {
+		background-position: 200% center;
+	}
+}
