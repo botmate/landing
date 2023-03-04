@@ -9,7 +9,7 @@ function Features({}: FeaturesProps) {
 			<Divider mb={12} />
 			<Box maxW='7xl' m='auto'>
 				<Heading fontSize='4xl' color='white' mb={2}>
-					Feature Like No Other Platform -
+					Open-source. Fast. Plugins.
 				</Heading>
 				<Text maxW='3xl' mb={12}>
 					BotMate is a platform that allows you to manage your Telegram bots. It
