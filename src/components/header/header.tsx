@@ -1,4 +1,5 @@
 import {
+	Box,
 	Button,
 	Center,
 	HStack,
@@ -51,7 +52,9 @@ function Header({}: HeaderProps) {
 			<Spacer />
 			<HStack>
 				<IconButton variant='outline' aria-label='github' icon={<FaGithub />} />
-				<Button leftIcon={<FaCloud />}>Cloud</Button>
+				<Box display={{ base: 'none', lg: 'block' }}>
+					<Button leftIcon={<FaCloud />}>Cloud</Button>
+				</Box>
 			</HStack>
 		</HStack>
 	);
