@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Features, Footer, Hero, Testimonals } from '@/sections';
 import { Header } from '@/components/header';
-import { Box } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 
 // todo: better SEO
 export default function Home() {
@@ -25,7 +25,10 @@ export default function Home() {
 				/>
 				<Header />
 				<Hero />
-				<Features />
+				<Stack spacing={20}>
+					<Features.Overview />
+					<Features.Moderations />
+				</Stack>
 				<Testimonals />
 				<Footer />
 			</Box>
