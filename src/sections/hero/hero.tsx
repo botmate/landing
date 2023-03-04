@@ -14,7 +14,7 @@ type HeroProps = {
 };
 function Hero({}: HeroProps) {
 	return (
-		<Flex py={20} flexDirection='column'>
+		<Flex py={20} flexDirection='column' px={{ base: 4, lg: 0 }}>
 			<Box maxW='5xl' m='auto' textAlign='center'>
 				<Center>
 					<Text

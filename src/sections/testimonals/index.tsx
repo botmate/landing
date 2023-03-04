@@ -34,7 +34,7 @@ function Testimonals() {
 		<>
 			<Divider my={12} />
 
-			<Box maxW='7xl' m='auto'>
+			<Box maxW='7xl' m='auto' px={{ base: 4, lg: 0 }}>
 				<Heading color='white'>
 					Here are some of the things people are saying about us
 				</Heading>

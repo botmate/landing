@@ -7,7 +7,7 @@ function Features({}: FeaturesProps) {
 	return (
 		<Box>
 			<Divider mb={12} />
-			<Box maxW='7xl' m='auto'>
+			<Box maxW='7xl' m='auto' px={{ base: 4, lg: 0 }}>
 				<Heading fontSize='4xl' color='white' mb={2}>
 					Open-source. Fast. Plugins.
 				</Heading>
@@ -18,7 +18,13 @@ function Features({}: FeaturesProps) {
 				</Text>
 			</Box>
 
-			<SimpleGrid maxW='7xl' m='auto' columns={2} spacing={12}>
+			<SimpleGrid
+				maxW='7xl'
+				m='auto'
+				columns={2}
+				spacing={12}
+				px={{ base: 4, lg: 0 }}
+			>
 				<FeatureItem
 					title='Free & Open-Source'
 					description='We believe in open-source. Forever. The entire codebase is available on GitHub. You can contribute to it and setup your own cloud instance.'
