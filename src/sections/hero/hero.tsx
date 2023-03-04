@@ -37,7 +37,10 @@ function Hero({}: HeroProps) {
 				</Center>
 				<Heading
 					mt={8}
-					size='4xl'
+					size={{
+						base: '2xl',
+						lg: '4xl',
+					}}
 					lineHeight={1.1}
 					// bgGradient='linear(to-r, #7d86cd, #c6bee5)'
 					color='#f5f6ff'
@@ -46,7 +49,15 @@ function Hero({}: HeroProps) {
 				>
 					Streamline Bot Development with BotMate
 				</Heading>
-				<Text maxW='3xl' m='auto' mt={4} fontSize={18}>
+				<Text
+					maxW='3xl'
+					m='auto'
+					mt={4}
+					fontSize={{
+						base: 16,
+						lg: 18,
+					}}
+				>
 					Open-souce platform for build and deploying Telegram bots. Comes with
 					an in-built moderation system, analytics, marketplace and much more.
 				</Text>
