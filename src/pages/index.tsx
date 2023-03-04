@@ -21,7 +21,7 @@ export default function Home() {
 					height='900px'
 					position='absolute'
 					zIndex={-1}
-					bgGradient='linear(to-t, primary.dark, #0f112c)'
+					bgGradient='linear(to-t, primary.dark, #1f2030)'
 				/>
 				<Header />
 				<Hero />

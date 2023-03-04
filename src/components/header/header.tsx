@@ -42,7 +42,6 @@ function Header({}: HeaderProps) {
 			gap={4}
 			py={2}
 			px={{ base: 4, lg: 0 }}
-			borderBottomWidth='1px'
 			color='white'
 		>
 			<Image src='/botmate-logo-dark.svg' alt='BotMate Logo' w={8} h={8} />
