@@ -64,7 +64,13 @@ function Moderations() {
 				</Text>
 			</Box>
 
-			<SimpleGrid columns={2} spacing={12} maxW='7xl' m='auto' mt={16}>
+			<SimpleGrid
+				columns={{ base: 1, lg: 2 }}
+				spacing={12}
+				maxW='7xl'
+				m='auto'
+				mt={16}
+			>
 				<ModerationItem
 					title='Anti-Spam'
 					description='Anti-spam system allows you add spam protection in your group. It supports multiple languages.'
