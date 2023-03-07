@@ -50,7 +50,7 @@ const ModerationItem = ({
 
 function Moderations() {
 	return (
-		<Box>
+		<Box px={{ base: 4, lg: 0 }}>
 			<Box maxW='7xl' m='auto' textAlign='center'>
 				<Center color='#B0BCFF'>
 					<HiShieldCheck size={100} />
