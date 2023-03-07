@@ -8,6 +8,7 @@ import {
 	Text,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { HiArrowRight } from 'react-icons/hi';
 
 type HeroProps = {
@@ -62,23 +63,25 @@ function Hero({}: HeroProps) {
 					Open-souce platform for build and deploying Telegram bots. Comes with
 					an in-built moderation system, analytics, marketplace and much more.
 				</Text>
-				<Button
-					mt={6}
-					size='lg'
-					rounded='full'
-					color='white'
-					leftIcon={<HiArrowRight />}
-					bgGradient='linear(to-r, #4e44b7, #424ca0)'
-					_hover={{
-						bgGradient: 'linear(to-r, #4e44b7, #424ca0)',
-					}}
-					_active={{
-						bgGradient: 'linear(to-r, #4e44b7, #424ca0)',
-						opacity: 0.8,
-					}}
-				>
-					Get started
-				</Button>
+				<Link href='https://docs.botmate.app/'>
+					<Button
+						mt={6}
+						size='lg'
+						rounded='full'
+						color='white'
+						leftIcon={<HiArrowRight />}
+						bgGradient='linear(to-r, #4e44b7, #424ca0)'
+						_hover={{
+							bgGradient: 'linear(to-r, #4e44b7, #424ca0)',
+						}}
+						_active={{
+							bgGradient: 'linear(to-r, #4e44b7, #424ca0)',
+							opacity: 0.8,
+						}}
+					>
+						Get started
+					</Button>
+				</Link>
 			</Box>
 			<Box maxW='7xl' m='auto' mt={20}>
 				<motion.div
