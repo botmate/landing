@@ -63,7 +63,7 @@ function Hero({}: HeroProps) {
 					Open-souce platform for build and deploying Telegram bots. Comes with
 					an in-built moderation system, analytics, marketplace and much more.
 				</Text>
-				<Link href='https://docs.botmate.app/'>
+				<Link href='https://help.botmate.app/'>
 					<Button
 						mt={6}
 						size='lg'
